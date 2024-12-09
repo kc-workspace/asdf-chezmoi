@@ -1,0 +1,67 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.7.4
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: true
+    checksum: true
+    download: true
+    fetch: true
+    git: false
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: false
+    system: true
+    tags: true
+    version: false
+app_desc: Manage your dotfiles across multiple diverse machines, securely.
+app_name: chezmoi
+app_repo: https://github.com/twpayne/chezmoi
+app_type: standalone
+app_website: https://www.chezmoi.io
+archive_conf_path: ''
+archive_conf_strip: 0
+archive_enabled: true
+archive_regex: (\\.tar\\.gz)$
+checksum_conf_algorithm: 256
+checksum_enabled: true
+checksum_url: https://github.com/twpayne/chezmoi/releases/download/v{version}/chezmoi_{version}_checksums.txt
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: ''
+download_url: https://github.com/twpayne/chezmoi/releases/download/v{version}/chezmoi_{version}_{os}_{arch}.tar.gz
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: move
+install_map_yaml:
+    chezmoi: bin/chezmoi
+package_enabled: false
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-chezmoi
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-chezmoi.git
+source_enabled: false
+sys_arch_enabled: true
+sys_arch_yaml:
+    aarch64*: arm64
+    armv5*: arm
+    armv6*: arm
+    armv7*: arm
+    i386: '386'
+    i686: '386'
+    powerpc64le: ppc64le
+    ppc64le: ppc64le
+    x86: '386'
+    x86_64: amd64
+sys_ext_enabled: false
+sys_os_enabled: true
+sys_os_yaml:
+    darwin: darwin
+    linux: linux
+test_cmd_args: --version
+version_file_enabled: true
+version_file_names: .chezmoiversion
+version_prefix: v
